@@ -1,16 +1,14 @@
-/* ---------- Dasar ---------- */
+/* Tiga warna utama: cokelat tua, krem, dan tanah. */
+:root {
+  --kopi: #3b2a20;
+  --krem: #faf4ea;
+  --tanah: #a9744f;
+}
 
 *,
 *::before,
 *::after {
   box-sizing: border-box;
-}
-
-:root {
-  --kopi: #3b2a20;
-  --krem: #faf4ea;
-  --tanah: #a9744f;
-  --garis: #e3d6c4;
 }
 
 body {
@@ -54,23 +52,18 @@ a:hover {
   color: var(--kopi);
 }
 
-a:focus-visible {
-  outline: 2px solid var(--tanah);
-  outline-offset: 2px;
-}
-
 img {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-.foto-kedai {
+main img {
   margin: 1.5rem 0;
   border-radius: 10px;
 }
 
-/* Lebar isi dibatasi lalu ditaruh di tengah layar. */
+/* Isi dibatasi 960px lalu ditaruh di tengah. */
 header,
 main,
 footer {
@@ -79,18 +72,17 @@ footer {
   padding-inline: 1rem;
 }
 
-/* ---------- Header dan navigasi ---------- */
+/* Header dan navigasi */
 
 header {
   padding-block: 1.25rem;
-  border-bottom: 1px solid var(--garis);
+  border-bottom: 1px solid var(--tanah);
 }
 
 header h1 {
   margin-bottom: 0.75rem;
 }
 
-/* Ponsel: judul di atas, link nav di bawahnya. */
 nav ul {
   display: flex;
   flex-wrap: wrap;
@@ -101,20 +93,12 @@ nav ul {
 }
 
 nav a {
-  display: inline-block;
-  padding-block: 0.2rem;
   font-size: 0.95rem;
   font-weight: 600;
   text-decoration: none;
 }
 
 nav a:hover {
-  color: var(--kopi);
-  text-decoration: underline;
-  text-underline-offset: 4px;
-}
-
-nav a.aktif {
   color: var(--kopi);
   text-decoration: underline;
   text-underline-offset: 4px;
@@ -136,7 +120,7 @@ main ul li {
 footer {
   margin-top: 2.5rem;
   padding-block: 1.5rem 2rem;
-  border-top: 1px solid var(--garis);
+  border-top: 1px solid var(--tanah);
   font-size: 0.9rem;
 }
 
@@ -162,20 +146,17 @@ footer p {
   }
 }
 
-/* ---------- Card menu ---------- */
-
-/* Ponsel dulu: satu kolom. */
+/* Card menu: ponsel satu kolom dulu. */
 .daftar-menu {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
-  margin: 0 0 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .kartu {
   padding: 1.1rem 1.15rem;
-  background-color: #fffaf2;
-  border: 1px solid var(--garis);
+  border: 1px solid var(--tanah);
   border-radius: 10px;
 }
 
@@ -183,7 +164,7 @@ footer p {
   margin-bottom: 0.15rem;
 }
 
-.kartu .harga {
+.harga {
   margin-bottom: 0.6rem;
   font-weight: 700;
   color: var(--tanah);
@@ -206,7 +187,7 @@ footer p {
   }
 }
 
-/* ---------- Form pemesanan ---------- */
+/* Form pemesanan */
 
 form {
   max-width: 36rem;
@@ -231,8 +212,8 @@ textarea {
   font-family: inherit;
   font-size: 1rem;
   color: var(--kopi);
-  background-color: #fffaf2;
-  border: 1px solid var(--garis);
+  background-color: var(--krem);
+  border: 1px solid var(--tanah);
   border-radius: 6px;
 }
 
@@ -251,7 +232,7 @@ textarea {
 fieldset {
   margin: 0 0 1.1rem;
   padding: 0.75rem 1rem;
-  border: 1px solid var(--garis);
+  border: 1px solid var(--tanah);
   border-radius: 8px;
 }
 
@@ -290,9 +271,4 @@ button {
 
 button:hover {
   background-color: var(--kopi);
-}
-
-button:focus-visible {
-  outline: 2px solid var(--kopi);
-  outline-offset: 2px;
 }

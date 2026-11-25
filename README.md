@@ -1,22 +1,5 @@
 https://hizkiasanjaya.github.io/kedai_kopi/
 
-# Kedai Kopi Senja
-
-Hasil Coding 2 pekan 3. Isinya masih tiga halaman dari pekan 2, sekarang
-ditambah satu berkas `css/style.css` yang dipakai bersama. Tidak ada atribut
-`style` dan tidak ada tag `<style>` di HTML, seluruh tampilan diatur dari
-berkas CSS itu.
-
-```
-kedai_kopi/
-├─ index.html
-├─ menu.html
-├─ pesan.html
-├─ css/
-│  └─ style.css
-├─ img/
-└─ README.md
-```
 
 ## Bagian yang memakai Flexbox dan Grid
 
