@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kedai Kopi Senja - Pesan</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Kedai Kopi Senja</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a class="aktif" href="pesan.html">Pesan</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h2>Form pemesanan</h2>
+      <p>Isi data di bawah, pesanan disiapkan sekitar 15 menit.</p>
+
+      <form method="get" action="pesan.html">
+        <p>
+          <label for="nama">Nama pemesan</label>
+          <input type="text" id="nama" name="nama" required />
+        </p>
+
+        <p>
+          <label for="wa">Nomor WhatsApp</label>
+          <input type="tel" id="wa" name="wa" required />
+        </p>
+
+        <p>
+          <label for="menu">Pilihan menu</label>
+          <select id="menu" name="menu" required>
+            <option value="">-- pilih --</option>
+            <option value="espresso">Espresso (Rp18.000)</option>
+            <option value="americano">Americano (Rp22.000)</option>
+            <option value="cappuccino">Cappuccino (Rp28.000)</option>
+            <option value="kopi-susu">Kopi Susu Senja (Rp25.000)</option>
+            <option value="matcha">Matcha Latte (Rp30.000)</option>
+            <option value="cokelat">Cokelat Panas (Rp27.000)</option>
+            <option value="teh">Teh Lemon Madu (Rp20.000)</option>
+          </select>
+        </p>
+
+        <p>
+          <label for="jumlah">Jumlah</label>
+          <input
+            type="number"
+            id="jumlah"
+            name="jumlah"
+            min="1"
+            max="10"
+            value="1"
+            required
+          />
+        </p>
+
+        <fieldset>
+          <legend>Cara ambil</legend>
+          <label class="pilihan">
+            <input
+              type="radio"
+              id="tempat"
+              name="cara_ambil"
+              value="tempat"
+              checked
+            />
+            Ambil di tempat
+          </label>
+          <label class="pilihan">
+            <input type="radio" id="antar" name="cara_ambil" value="antar" />
+            Diantar
+          </label>
+        </fieldset>
+
+        <p>
+          <label for="catatan">Catatan</label>
+          <textarea id="catatan" name="catatan" rows="4"></textarea>
+        </p>
+
+        <button type="submit">Kirim</button>
+      </form>
+    </main>
+
+    <footer>
+      <p>Jalan Diponegoro No. 42, Semarang</p>
+      <p>Buka 08.00 - 22.00 WIB (Senin sampai Jumat)</p>
+      <p>Telepon: 024-1234567</p>
+    </footer>
+  </body>
+</html>
